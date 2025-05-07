@@ -8,7 +8,7 @@ app.title = "Dashboard Histograma"
 
 app.layout = layout
 
-server = app.server  # Exponer variable WSGI para Render
+app = app.server
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8050))
